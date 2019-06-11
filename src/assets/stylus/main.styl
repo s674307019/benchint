@@ -1,0 +1,56 @@
+/*CSS重置 v1.0*/
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  word-break break-all
+
+fieldset, img
+  border 0 none
+
+dl, ul, ol, menu, li
+  list-style none
+
+a
+  color #666
+  text-decoration none
+  outline 0
+
+active, ahover
+  text-decoration none
+
+h1, h2, h3, h4, h5, h6, button
+  font-family "微软雅黑 Light", sans-serif
+
+button
+  outline 0
+
+.clearFixBefore, .clearFixAfter
+  content ''
+  display block
+  clear both
+
+html
+  height 100%
+  font-size 10vw
+
+body
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  font-size 16px
+  width 100%
+  height @width
+
+@media screen and (max-width: 320px)
+  html
+    font-size 32px
+  body
+    min-width 320px
+
+@media screen and (min-width: 800px)
+  html
+    font-size: 80px
+  body
+    max-width 800px
